@@ -7,4 +7,3 @@ for x in range(9):
         else:
             print('{:d}{:d}'.format(x, y))
     i += 1
-
