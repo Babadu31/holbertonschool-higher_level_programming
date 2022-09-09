@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+import sys
+
+
+def main(*argv):
+    l = len(sys.argv)
+    sum = 0
+    if l > 1:
+        for args in sys.argv:
+            if args != sys.argv[0]:
+                sum = sum + int(args)
+    print(sum)
+
 if __name__ == "__main__":
-    def sum_all(*args):
-        sum = 0
-        for num in args:
-            if not str(num).isdigit():
-                return False
-        else:
-            sum += int(num)
-            return sum
-      
+    main()
