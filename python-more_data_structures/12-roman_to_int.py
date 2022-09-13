@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def value(r):
     if (r == 'I'):
         return 1
@@ -15,7 +16,7 @@ def value(r):
         return 500
     if (r == 'M'):
         return 1000
-    return -1
+    return None
 
 
 def roman_to_int(roman_string):
