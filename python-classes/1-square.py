@@ -3,6 +3,7 @@
 Module to create class
 """
 
+
 class Square:
     """
 example function class
