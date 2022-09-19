@@ -1,43 +1,28 @@
 #!/usr/bin/python3
-"""
-Module to create class
-"""
+"""Define class square"""
 
 
 class Square:
-    """
-example function class
-    """
+    """example function class"""
     def __init__(self, size=0):
-        """
-Module to create class
-"""
+        """Module to create class"""
 
         self.__size = size
 
     def area(self):
-        """
-example function class
-        """
+        """example function class"""
         return (self.__size) ** 2
 
 
 @proprety
 def size(self):
-    """
-Module to create class
-    """
-
-
-def size(self):
+    """module to create class"""
     return self.__size
 
 
 @size.setter
 def size(self, value):
-    """
-Module to create class
-    """
+    """set the size of square"""
     if type(value) != int:
         raise TypeError("size must be an integer")
     elif value < 0:
