@@ -2,10 +2,10 @@
 """ Module to create class
 """
 class Square:
+
+
     """
-    Example function class
+Example function class
     """
-    "Empty square"
-    
-    
-    pass
+"Empty square"
+pass
