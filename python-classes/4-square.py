@@ -3,26 +3,38 @@
 
 
 class Square:
-    """example function class"""
+    """square"""
     def __init__(self, size=0):
-        """Module to create class"""
+        """init square
+        attribute : dssd
+            Returns: none
+        """
 
-        self.__size = size
+        self.size = size
 
     def area(self):
-        """example function class"""
+        """example function class
+                attribute : dssd
+            Returns: area of square
+        """
         return (self.__size) ** 2
 
 
 @proprety
 def size(self):
-    """module to create class"""
+    """size of square
+        attribute : dssd
+        Returns: size of square
+    """
     return self.__size
 
 
 @size.setter
 def size(self, value):
-    """set the size of square"""
+    """set the size of square
+        attribute : dssd
+        Returns: none
+        """
     if type(value) != int:
         raise TypeError("size must be an integer")
     elif value < 0:
