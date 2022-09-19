@@ -2,6 +2,8 @@
 """ Module to create class
 """
 class Square:
+
+
     """
     Example function class
     """
