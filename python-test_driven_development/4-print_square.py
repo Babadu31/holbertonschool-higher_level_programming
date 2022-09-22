@@ -6,7 +6,7 @@ Square Printer Module
 
 def print_square(size):
     """
-    Print square 
+    Print square
     """
 
     if type(size) is float and size < 0:
