@@ -1,7 +1,3 @@
-=========================
-Tests for 0-add_integer.py
-==========================
-
 Importing the module and normal addition
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2, 2)
