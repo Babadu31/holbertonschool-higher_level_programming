@@ -88,9 +88,8 @@ class Rectangle(Base):
         self.__height = value
 
     @x.setter  # validation of all setter methods and instantiation
-    def x(self, value):
+    def x(self, value):  # x setter
         """
-        x Setter
         Attribute:
         Value(int): value to assign
         Raises:
