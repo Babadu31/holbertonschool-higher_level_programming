@@ -30,3 +30,12 @@ class Base:
         otherwise, increment __nb_objects and assign the new value
         to the public instance attribute id
         """
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        Return A JSON STRING a representation list_dict..
+        """
+        if not list_dictionaries:
+            return "[]"
+        return json.dumps(list_dictionaries)
