@@ -9,20 +9,20 @@ class Square(Rectangle):
     """
     Class Square
     """
-    def __init__(self, size, x=0, y=0, id=None):
+    def __init__(self, size, x=0, y=0, id=None):  # class constructor
         """
         """
-        super().__init__(size, size, x, y, id)
+        super().__init__(size, size, x, y, id)  # super class
         self.size = size
 
-    @property
+    @property  # public getter and setter size
     def size(self):
         """
         Size Getter
         """
         return self.width
 
-    @size.setter
+    @size.setter  # public getter and setter size
     def size(self, value):
         """
         Size Setter
@@ -30,10 +30,19 @@ class Square(Rectangle):
         self.height = value
         self.width = value
 
-
-    def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):  # public method
         """
-        update
+        update class Square
+        assigns attributes
+        *args is the list of arguments - no-keyworded arguments
+        1st argument should be the id attribute
+        2nd argument should be the size attribute
+        3rd argument should be the x attribute
+        4th argument should be the y attribute
+        **kwargs can be thought of as a double pointer to
+        a dictionary: key/value (keyworded arguments)
+        **kwargs must be skipped if *args exists and is not empty
+        Each key in this dictionary represents an attribute to the instance
         """
         i = 0
         if args:
@@ -51,9 +60,14 @@ class Square(Rectangle):
             for arg in kwargs:
                 setattr(self, arg, kwargs.get(arg))
 
-    def to_dictionary(self):
+    def to_dictionary(self):  # public method
         """
         returns the dictionary
         representation of a square
+        This dictionary must contain:
+        id
+        size
+        x
+        y
         """
         return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
