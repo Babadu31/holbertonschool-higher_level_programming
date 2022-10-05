@@ -3,6 +3,7 @@
 base module
 """
 import json
+from os.path import exists
 
 
 class Base:
@@ -43,7 +44,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """
-            Save Dict To Json
+        Save Dict To Json
         """
         d = []
         with open(cls.__name__ + ".json", "w", encoding="utf-8") as f:
