@@ -10,10 +10,6 @@ from models.base import Base
 class TestBaseClass(unittest.TestCase):
     """Class testing the Base class
     """
-    def _too_many_args(self):
-        """testing too many args to init"""
-        with self.assertRaises(TypeError):
-            b = Base(1, 1)
     
     def test_no_id(self):
         """Tests id as None"""
