@@ -1,2 +1,2 @@
--- important comment
+--  lists all databases
 SHOW DATABASES;
