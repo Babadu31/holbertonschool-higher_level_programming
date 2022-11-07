@@ -1,0 +1,1 @@
+“A dictatorship is when people are already communists. They are cold, gray hats and zippered shoes. »
