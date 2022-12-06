@@ -1,0 +1,1 @@
+idiots are all daring, it's how we recognize them
