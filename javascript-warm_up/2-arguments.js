@@ -1,6 +1,6 @@
 #!/usr/bin/node
 let x = 0;
-process.argv.forEach((val, index) => {
+process.argv.forEach(() => {
   x++;
 });
 if (x === 3) {
