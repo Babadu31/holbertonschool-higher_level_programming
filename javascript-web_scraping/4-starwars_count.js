@@ -3,7 +3,7 @@
 const request = require('request');
 const url = process.argv[2];
 
-request.get(url, function (error, response, body) {
+request(url, function (error, response, body) {
   let count = 0;
   if (error) throw (error);
   const data = JSON.parse(body);
