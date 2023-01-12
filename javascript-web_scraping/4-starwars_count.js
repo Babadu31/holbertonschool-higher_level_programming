@@ -1,16 +1,24 @@
 #!/usr/bin/node
 
-const request = require('request');
 const url = process.argv[2];
+const request = require('request');
 
-request.get(url, function (error, response, body) {
-  let count = 0;
-  if (error) throw (error);
-  const data = JSON.parse(body);
-  for (let x = 0; data.results[x] !== undefined; x++) {
-    if (data.results[x].characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
-      count++;
+request(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
+  } else if (response.statusCode === 200) {
+    const films = JSON.parse(body).results;
+    let count = 0;
+    for (const i in films) {
+      const chars = films[i].characters;
+      for (const c in chars) {
+        if (chars[c].includes('18')) {
+	  count++;
+        }
+      }
     }
+    console.log(count);
+  } else {
+    console.log('Erorr Code:' + response.statusCode);
   }
-  console.log(count);
 });
